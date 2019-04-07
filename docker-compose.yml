@@ -1,0 +1,9 @@
+version: "3"
+services:
+    jenkins:
+        build: "."
+        ports:
+          - "8080:8080"
+        volumes:
+          - "./scm_fs/cdg:/scm_fs"
+
